@@ -1,4 +1,18 @@
 class PezDispenser {
+  final private String characterName;
 
-  String characterName = "Yoda";
+  public PezDispenser(String characterName) {
+    this.characterName = characterName;
+  }
+
+  public String getCharacterName() {
+    return characterName;
+  }
+/*
+  public String swapHead(String characterName) {
+    String originalCharacterName = this.characterName;
+    this.characterName = characterName;
+    return originalCharacterName;
+  }
+*/
 }
