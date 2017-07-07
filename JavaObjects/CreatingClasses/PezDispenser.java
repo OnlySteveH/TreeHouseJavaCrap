@@ -1,5 +1,5 @@
 class PezDispenser {
-  public final int MAX_PEZ = 12;
+  public static final int MAX_PEZ = 12;
   final private String characterName;
 
   public PezDispenser(String characterName) {
