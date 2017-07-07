@@ -1,4 +1,5 @@
 class PezDispenser {
+  public final int MAX_PEZ = 12;
   final private String characterName;
 
   public PezDispenser(String characterName) {
@@ -8,6 +9,9 @@ class PezDispenser {
   public String getCharacterName() {
     return characterName;
   }
+
+
+
 /*
   public String swapHead(String characterName) {
     String originalCharacterName = this.characterName;
