@@ -9,11 +9,28 @@ class PezDispenser {
   }
 
   public void fill() { // Use void when nothing is returned from the method.
-    pezCount = MAX_PEZ;
+    fill(MAX_PEZ);
+  }
+
+  public void fill(int pezAmmount) {
+    int newAmmount = pezCount + pezAmmount;
+    if (newAmmount > MAX_PEZ) {
+      throw new IllegalArgumentException("Too many PEZ!!!!");
+    }
+    pezCount = newAmmount;
   }
 
   public boolean isEmpty() {
     return pezCount == 0;
+  }
+
+  public boolean dispense() {
+    boolean wasDispensed = false;
+    if (!isEmpty()) {
+      pezCount--;
+      wasDispensed = true;
+    }
+    return wasDispensed;
   }
 
   public String getCharacterName() {
