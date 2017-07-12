@@ -4,6 +4,7 @@ public class Hangman {
 
     Game game = new Game("treehouse");
     Prompter prompter = new Prompter(game);
+    prompter.displayProgress();
     boolean isHit = prompter.promptForGuess();
 
     if (isHit) {
@@ -11,5 +12,6 @@ public class Hangman {
     } else {
       System.out.println("Oops missed!");
     }
+    prompter.displayProgress();
   }
 }
