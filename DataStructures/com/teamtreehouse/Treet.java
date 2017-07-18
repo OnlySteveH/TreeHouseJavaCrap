@@ -3,6 +3,7 @@ package com.teamtreehouse;
 import java.util.Date;
 
 public class Treet {
+
   private String mAuthor;
   private String mDescription;
   private Date mCreationDate;
@@ -11,6 +12,11 @@ public class Treet {
     mAuthor = author;
     mDescription = description;
     mCreationDate = creationdate;
+  }
+
+  @Override
+  public String toString() {
+    return "Treet:  \"" + mDescription + "\" - @" + mAuthor;
   }
 
   public String getAuthor() {
@@ -25,5 +31,4 @@ public class Treet {
     return mCreationDate;
   }
 
-  
 }
