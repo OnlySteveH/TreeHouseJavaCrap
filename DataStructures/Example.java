@@ -11,5 +11,9 @@ public class Example {
     new Date(1421849732000L)
     );
     System.out.printf("This is a new Treet: %s %n", treet);
+    System.out.println("Words are: ");
+    for (String word : treet.getWords()) {
+      System.out.println(word);
+    }
   }
 }

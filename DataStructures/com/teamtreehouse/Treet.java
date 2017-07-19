@@ -31,4 +31,8 @@ public class Treet {
     return mCreationDate;
   }
 
+  public String[] getWords() {
+    return mDescription.toLowerCase().split("[^\\w#@']+");
+  }
+
 }
