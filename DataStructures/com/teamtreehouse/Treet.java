@@ -3,7 +3,7 @@ package com.teamtreehouse;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Treet implements Comparable, Serializable {
+public class Treet implements Comparable<Treet>, Serializable {
   private static final long serialVersionUID = 7146681148113043748L;
 //  private boolean mBreakIt = true;
   private String mAuthor;
@@ -22,8 +22,7 @@ public class Treet implements Comparable, Serializable {
   }
 
   @Override
-  public int compareTo(Object obj) {
-    Treet other = (Treet) obj;
+  public int compareTo(Treet other) {
     if (equals(other)) {
       return 0;
     }
