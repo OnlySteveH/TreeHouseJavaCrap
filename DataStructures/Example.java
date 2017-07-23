@@ -36,5 +36,12 @@ public class Example {
     for (Treet reloaded : reloadedTreets) {
       System.out.println(reloaded);
     }
+
+    Treet originalTreet = treets[0];
+    System.out.println("Hashtags: ");
+    for (String hashtag : originalTreet.getHashtags()) {
+      System.out.println(hashtag);
+    }
+
   }
 }
