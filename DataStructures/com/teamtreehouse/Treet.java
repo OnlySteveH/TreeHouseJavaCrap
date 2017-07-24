@@ -57,14 +57,14 @@ public class Treet implements Comparable<Treet>, Serializable {
     return getWordsPrefixedWith("@");
   }
 
-  public List<String> getHashtags() {
+  public List<String> getHashTags() {
     return getWordsPrefixedWith("#");
   }
 
   private List<String> getWordsPrefixedWith(String prefix) {
     List<String> results = new ArrayList<String>();
     for (String word : getWords()) {
-      if (word.startsWith(prefix)){
+      if (word.startsWith(prefix)) {
         results.add(word);
       }
     }
