@@ -1,4 +1,4 @@
-package com.teamtreehouse.model;
+package teamtreehouse.model;
 
 public class Song {
   private String mArtist;

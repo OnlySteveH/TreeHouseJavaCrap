@@ -1,5 +1,5 @@
-import com.teamtreehouse.model.Song;
-import com.teamtreehouse.model.SongBook;
+import teamtreehouse.model.Song;
+import teamtreehouse.model.SongBook;
 
 public class Karaoke {
 

@@ -1,4 +1,4 @@
-package com.teamtreehouse.model;
+package teamtreehouse.model;
 
 import java.util.ArrayList;
 import java.util.List;
