@@ -23,4 +23,8 @@ public class Song {
     return mVideoUrl;
   }
 
+  @Override
+  public String toString() {
+    return String.format("Song: %s by %s", mTitle, mArtist);
+  }
 }
